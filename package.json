@@ -1,0 +1,17 @@
+{
+  "name": "mgesto",
+  "version": "1.0.0",
+  "description": "A library that detects mouse gestures and output them as an RxJS observable",
+  "main": "./dist/mgesto.js",
+  "types": "./dist/mgesto.d.ts",
+  "scripts": {
+    "prepublishOnly": "tsc --outDir ./dist --declaration",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "eyalzh@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "^7.5.5",
+    "typescript": "^4.7.3"
+  }
+}
