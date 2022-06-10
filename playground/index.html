@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link media="all" rel="stylesheet" href="styles.css" />
+    <script src="../dist/bundle.js"></script>
+  </head>
+  <body>
+
+    <div class="root" id="root">
+        <div class="title">Playground</div>
+        <div>
+            <input type="text" id="text-input-1" />
+            <button id="button-1">test</button>
+        </div>
+        <div>
+            <input type="text" id="text-input-2" />
+            <button id="button-2">test 2</button>
+        </div>
+    </div>
+
+    <script>
+
+        const rootEl = document.getElementById('root');
+        const $gestures = fromEventTarget(rootEl);
+        $gestures.subscribe(e => {
+          console.log(e);
+        });
+        console.log($gestures);
+
+    </script>
+
+  </body>
+</html>
